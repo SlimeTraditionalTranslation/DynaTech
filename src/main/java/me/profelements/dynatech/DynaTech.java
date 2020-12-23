@@ -1,14 +1,14 @@
 package me.profelements.dynatech;
 
 import org.apache.commons.lang.Validate;
-import org.bstats.bukkit.Metrics;
+//import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
-import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
+//import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
+//import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
 import me.profelements.dynatech.items.backpacks.PicnicBasket;
 import me.profelements.dynatech.items.tools.ElectricalStimulator;
 import me.profelements.dynatech.listeners.ElectricalStimulatorListener;
@@ -26,12 +26,12 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
     public void onEnable() {
 
         instance = this;
-        Config cfg = new Config(this);
-        final Metrics metrics = new Metrics(this, 9689);
+        //Config cfg = new Config(this);
+        //final Metrics metrics = new Metrics(this, 9689);
 
-        if (cfg.getBoolean("options.auto-update")) {
+        /*if (cfg.getBoolean("options.auto-update")) {
             new GitHubBuildsUpdater(this, getFile(), "ProfElements/DynaTech/master").start();
-        }
+        }*/
 
         DynaTechItemsSetup.setup(this);
         new PicnicBasketListener(this, (PicnicBasket) DynaTechItems.PICNIC_BASKET.getItem());
@@ -46,7 +46,7 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public String getBugTrackerURL() {
-        return "https://github.com/ProfElements/ExtraStuff/issues";
+        return "https://github.com/xMikux/DynaTech/issues";
     }
 
     @Override

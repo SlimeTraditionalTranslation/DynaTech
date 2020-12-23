@@ -16,37 +16,37 @@ public class DynaTechItems {
 
     public static final Category DynaTechGeneral = new Category(new NamespacedKey(DynaTech.getInstance(),
             "dynatech"),
-            new CustomItem(Material.CONDUIT, "&bDynaTech")
+            new CustomItem(Material.CONDUIT, "&bDyna科技")
     );
 
     //Materials
-    public static final SlimefunItemStack STAINLESS_STEEL = new SlimefunItemStack("STAINLESS_STEEL", Material.IRON_INGOT, "&6Stainless Steel Ingot");
-    public static final SlimefunItemStack STAINLESS_STEEL_ROTOR = new SlimefunItemStack("STAINLESS_STEEL_ROTOR", Material.IRON_BLOCK, "&6Stainless Steel Rotor");
-    public static final SlimefunItemStack ANCIENT_MACHINE_CORE = new SlimefunItemStack("ANCIENT_MACHINE_CORE", Material.LAPIS_BLOCK, "&6Ancient Machine Core");
+    public static final SlimefunItemStack STAINLESS_STEEL = new SlimefunItemStack("STAINLESS_STEEL", Material.IRON_INGOT, "&6不銹鋼錠");
+    public static final SlimefunItemStack STAINLESS_STEEL_ROTOR = new SlimefunItemStack("STAINLESS_STEEL_ROTOR", Material.IRON_BLOCK, "&6不銹鋼轉子");
+    public static final SlimefunItemStack ANCIENT_MACHINE_CORE = new SlimefunItemStack("ANCIENT_MACHINE_CORE", Material.LAPIS_BLOCK, "&6古代機器核心");
 
     //Backpacks
     public static final SlimefunItemStack PICNIC_BASKET = new SlimefunItemStack("PICNIC_BASKET",
             new CustomItem(SkullItem.fromHash("7a6bf916e28ccb80b4ebfacf98686ad6af7c4fb257e57a8cb78c71d19dccb2")),
-            "&6Picnic Basket",
+            "&6野餐籃",
             "",
-            "&fAllows you to store food",
-            "&fAutomatically consumes them when you're hungry",
-            "&fMust be in your inventory",
+            "&f可儲存食物",
+            "&f當你餓的時候自動餵食",
+            "&f必須在你的背包內",
             "",
-            "&fSize: &e27",
+            "&f大小: &e27",
             "",
             "&7ID: <ID>",
             "",
-            "&eRight Click &7to open."
+            "&e右鍵點擊 &7打開."
     );
 
     public static final SlimefunItemStack ELECTRICAL_STIMULATOR = new SlimefunItemStack("ELECTRICAL_STIMULATOR",
             new CustomItem(SkullItem.fromHash("82a319cf66a4de12e3330e8bc4c82c985ccc3cb2230868c336a88fc4a22082a")),
-            "&6Electrical Stimulator",
+            "&6電流刺激器",
             "",
-            "&fAutomatically feed you for energy",
+            "&f自動餵食你能量",
             "",
-            "&f&oStimulate your senses.",
+            "&f&o刺激你的感官.",
             "",
             LoreBuilder.powerCharged(0, 1024)
     );
@@ -54,11 +54,11 @@ public class DynaTechItems {
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
             Material.SMOKER,
-            "&6Auto Kitchen",
+            "&6自動廚房",
             "",
-            "&fAutomatically makes Kitchen recipes",
+            "&f自動製作廚房的配方",
             "",
-            "&f&oSmells like cookies",
+            "&f&o聞起來像餅乾",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.speed(1),
@@ -67,11 +67,11 @@ public class DynaTechItems {
 
     public static final SlimefunItemStack GROWTH_CHAMBER = new SlimefunItemStack("GROWTH_CHAMBER",
             Material.GREEN_STAINED_GLASS,
-            "&6Growth Chamber",
+            "&6生長倉",
             "",
-            "&fAutomatically grows some plants.",
+            "&f自動生長一些植物.",
             "",
-            "&f&oIts like a small greenhouse!",
+            "&f&o就像是一個小溫室!",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.speed(1),
@@ -80,9 +80,9 @@ public class DynaTechItems {
 
     public static final SlimefunItemStack ANTIGRAVITY_BUBBLE = new SlimefunItemStack("ANTIGRAVITY_BUBBLE",
             Material.OBSIDIAN,
-            "&6Antigravity Bubble",
+            "&6反重力泡泡",
             "",
-            "&f Creative Flight within an 45 block area",
+            "&f 創造飛行在45格方塊範圍內",
             "",
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.powerPerSecond(128)
@@ -90,19 +90,19 @@ public class DynaTechItems {
 
     public static final SlimefunItemStack WEATHER_CONTROLLER = new SlimefunItemStack("WEATHER_CONTROLLER",
             Material.BLUE_STAINED_GLASS,
-            "&6Weather Controller",
+            "&6天氣控制器",
             "",
-            "&fControls the weather when given a key item.",
+            "&f給予特定的物品來控制天氣.",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.powerPerSecond(32)
             );
-  
+
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
             Material.COBBLESTONE_WALL,
-            "&6Hydro Generator",
+            "&6水輪發電機",
             "",
-            "&fCreates energy from flowing water",
+            "&f通過流動的水來產生能源",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(128),
@@ -111,9 +111,9 @@ public class DynaTechItems {
 
     public static final SlimefunItemStack DRAGON_GENERATOR = new SlimefunItemStack("DRAGON_GENERATOR",
             Material.GRAY_CONCRETE
-            ,"&6Dragon Egg Generator",
+            ,"&6龍蛋發電機",
             "",
-            "&fCreates energy from the warmth of a Dragon Egg",
+            "&f從龍蛋的溫暖中產生能源",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(512),

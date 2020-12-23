@@ -1,17 +1,20 @@
-# DynaTech
-A set of item and machines that I made to make things easier for me and just for fun.
-Most of these could possibly be overpowered or heavily underpowered.
+# Dyna科技
+我製作一套物品和機器, 使這些東西更加簡單與有趣.
+其中大多數可能過於強大或過於不足.
 
-## Machines
-- **Auto-Kitchen** - If you have ExoticGarden installed, this machine will become available. It automatically crafts any Kitchen recipe inserted into it.
-- **Growth Chamber** - Automatically grow some plants, including sapling, cactus and sugarcane and bamboo!
-- **Antigravity Bubble** - Temporary creative flight within a 45 block area when powered.
-- **Weather Controller** - Controls the weather when given a key item (Sunflower > Clear, Lilac > Rain, Creeper Head > Thunder).
+此為**非官方**版本, 請勿在該作者的問題追蹤內回報!
+[原專案連結](https://github.com/ProfElements/DynaTech)
 
-## Generators
-- **Hydro Generator** - Generates energy from flowing water (Waterlog the generator)
-- **Dragon Egg Generator** - Generates energy from the warmth of a dragon egg. (Place the dragon egg on top)
+## 機器
+- **自動廚房** - 如果你安裝了ExoticGarden, 此機器將可使用. 它會自動製作任何設定在內的配方.
+- **生長倉** - 自動生長一些植物, 包括樹苗, 仙人掌, 甘蔗和竹子!
+- **反重力泡泡** - 通電後, 在45格範圍內暫時的創造飛行.
+- **天氣控制器** - 給予關鍵物品來控制天氣 (向日葵 > 晴朗, 紫丁香 > 降雨, 苦力怕頭顱 > 雷雨).
 
-## Tools
-- **Picnic Basket** - Its an upgraded Cooler. It can eat any ExoticGarden custom foods, or just regular vanilla foods, it has a configurable blacklist in the items.yml
-- **Electrical Stimulator** - Feed the player for energy. 
+## 發電機
+- **水輪發電機** - 從流動的水中產生能量 (將水淹入發電機)
+- **龍蛋發電機** - 從龍蛋的溫暖中產生能量. (將龍蛋放置在上方)
+
+## 工具
+- **野餐籃** - 它是升級版的冰箱. 可以吃任何ExoticGarden的自定義食物, 也可以只吃原版食物, 並且可以在items.yml內配置黑名單
+- **電流刺激器** - 餵食玩家能源. 

@@ -5,7 +5,7 @@ name: DynaTech
 author: ProfElements
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: A slimefun addon that add random stuff I want
+description: 黏液科技附加 Dyna科技 繁體翻譯版.
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.profelements.dynatech.DynaTech
