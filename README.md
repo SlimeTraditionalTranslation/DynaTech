@@ -18,3 +18,17 @@
 ## 工具
 - **野餐籃** - 它是升級版的冰箱. 可以吃任何ExoticGarden的自定義食物, 也可以只吃原版食物, 並且可以在items.yml內配置黑名單
 - **電流刺激器** - 餵食玩家能源. 
+- **背包過濾器** - 當攜帶時, 移除任何物品在你的背包中與背包過濾器內相同的物品.
+
+## Credits
+ [NCBPFluffyBear](https://github.com/ncbpfluffybear) for their autocrafter code since it helped alot with the Auto-Kitchen.
+
+ [Mooy1](https://github.com/mooy1) for their hydro generator code so I could figure out how to do waterlogging right.
+
+ [Seggan](https://github.com/seggan) for showing me how to make a good container class instead of using Slimefun's default.
+
+ [WalshyDev](https://github.com/WalshyDev) for answering my spam in the programming help channel.
+
+ [Slimefun Discord](https://slimefun.dev/discord) for putting up with my outright spam of the programming help channel.
+
+ [Slimefun](https://github.com/slimefun/slimefun4) for being incredibly intuitive to make an addon for and overall being generally helpful when needing examples.
