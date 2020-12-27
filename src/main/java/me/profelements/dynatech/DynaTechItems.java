@@ -117,7 +117,7 @@ public class DynaTechItems {
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(128),
-            LoreBuilder.powerPerSecond(32)
+            LoreBuilder.powerPerSecond(16)
     );
 
     public static final SlimefunItemStack DRAGON_GENERATOR = new SlimefunItemStack("DRAGON_GENERATOR",
@@ -131,6 +131,26 @@ public class DynaTechItems {
             LoreBuilder.powerPerSecond(32)
     );
 
+    public static final SlimefunItemStack CHIPPING_GENERATOR = new SlimefunItemStack("CHIPPING_GENERATOR",
+            Material.SPRUCE_WOOD,
+            "&6切屑發電機",
+            "",
+            "&f從損壞的物品提取能源 (物品必須有耐久度)",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
+            LoreBuilder.powerBuffer(256),
+            LoreBuilder.power(2, " 每個耐久度")
+    );
 
+    public static final SlimefunItemStack CULINARY_GENERATOR = new SlimefunItemStack("CULINARY_GENERATOR",
+            Material.BLAST_FURNACE,
+            "&6烹飪發電機",
+            "",
+            "&f從食物中提取能源",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
+            LoreBuilder.powerBuffer(256),
+            LoreBuilder.powerPerSecond(8)
+    );
 
 }
