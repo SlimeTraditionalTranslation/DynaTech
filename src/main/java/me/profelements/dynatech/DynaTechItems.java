@@ -109,6 +109,16 @@ public class DynaTechItems {
             LoreBuilder.powerPerSecond(32)
             );
 
+    public static final SlimefunItemStack POTION_SPRINKLER = new SlimefunItemStack("POTION_SPRINKLER",
+            new CustomItem(SkullItem.fromHash("8d302104180cb79d5f4cf423649ddfa8ffb31a1875fa02a983cd248c72dfb0ea")),
+            "&6藥水灑水器",
+            "",
+            "&f範圍性添加多人效果的藥水裝置.",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.powerPerSecond(32)
+            );
+
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
             Material.COBBLESTONE_WALL,
             "&6水輪發電機",
