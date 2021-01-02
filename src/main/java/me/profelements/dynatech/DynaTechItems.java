@@ -23,6 +23,7 @@ public class DynaTechItems {
     public static final SlimefunItemStack STAINLESS_STEEL = new SlimefunItemStack("STAINLESS_STEEL", Material.IRON_INGOT, "&6不銹鋼錠");
     public static final SlimefunItemStack STAINLESS_STEEL_ROTOR = new SlimefunItemStack("STAINLESS_STEEL_ROTOR", Material.IRON_BLOCK, "&6不銹鋼轉子");
     public static final SlimefunItemStack ANCIENT_MACHINE_CORE = new SlimefunItemStack("ANCIENT_MACHINE_CORE", Material.LAPIS_BLOCK, "&6古代機器核心");
+    public static final SlimefunItemStack VEX_GEM = new SlimefunItemStack("VEX_GEM", SkullItem.fromHash("b91aeca7c17e66d867231b36d96e83c1ede75eaf67ccf3a88dca15d4114ae167"), "&6惱鬼寶石");
 
     //Backpacks
     public static final SlimefunItemStack PICNIC_BASKET = new SlimefunItemStack("PICNIC_BASKET",
@@ -38,7 +39,7 @@ public class DynaTechItems {
             "&7ID: <ID>",
             "",
             "&e右鍵點擊 &7打開."
-    );
+            );
 
     //Tools
     public static final SlimefunItemStack INVENTORY_FILTER = new SlimefunItemStack("INVENTORY_FILTER",
@@ -50,7 +51,7 @@ public class DynaTechItems {
             "&7ID: <ID>",
             "",
             "&e右鍵點擊 &7打開."
-    );
+            );
 
     public static final SlimefunItemStack ELECTRICAL_STIMULATOR = new SlimefunItemStack("ELECTRICAL_STIMULATOR",
             new CustomItem(SkullItem.fromHash("82a319cf66a4de12e3330e8bc4c82c985ccc3cb2230868c336a88fc4a22082a")),
@@ -61,7 +62,19 @@ public class DynaTechItems {
             "&f&o刺激你的感官.",
             "",
             LoreBuilder.powerCharged(0, 1024)
-    );
+            );
+
+    public static final SlimefunItemStack ANGEL_GEM = new SlimefunItemStack("ANGEL_GEM",
+            Material.NETHERITE_BLOCK, 
+            "&6飛行寶石",
+            "",
+            "&f永久性創造飛行. 有些速度調整設定.",
+            "",
+            "&f&o像鳥一樣飛翔~",
+            "",
+            "&7飛行: <enabled>",
+            "&7飛行速度: <speed>"
+            );
 
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
@@ -75,7 +88,7 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilder.powerPerSecond(16)
-    );
+            );
 
     public static final SlimefunItemStack GROWTH_CHAMBER = new SlimefunItemStack("GROWTH_CHAMBER",
             Material.GREEN_STAINED_GLASS,
@@ -140,7 +153,7 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(128),
             LoreBuilder.powerPerSecond(16)
-    );
+            );
 
     public static final SlimefunItemStack DRAGON_GENERATOR = new SlimefunItemStack("DRAGON_GENERATOR",
             Material.GRAY_CONCRETE
@@ -151,7 +164,7 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(512),
             LoreBuilder.powerPerSecond(32)
-    );
+            );
 
     public static final SlimefunItemStack CHIPPING_GENERATOR = new SlimefunItemStack("CHIPPING_GENERATOR",
             Material.SPRUCE_WOOD,
@@ -162,7 +175,7 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(256),
             LoreBuilder.power(2, " 每個耐久度")
-    );
+            );
 
     public static final SlimefunItemStack CULINARY_GENERATOR = new SlimefunItemStack("CULINARY_GENERATOR",
             Material.BLAST_FURNACE,
@@ -173,6 +186,6 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(256),
             LoreBuilder.powerPerSecond(8)
-    );
+            );
 
 }

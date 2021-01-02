@@ -23,6 +23,7 @@
 - **野餐籃** - 它是升級版的冰箱. 可以吃任何ExoticGarden的自定義食物, 也可以只吃原版食物, 並且可以在items.yml內配置黑名單
 - **電流刺激器** - 餵食玩家能源. 
 - **背包過濾器** - 撿起物品後, 如果物品與背包過濾器中的過濾物品相同, 則該物品將會丟入虛空之中.
+- **飛行寶石** - 永久性創造飛行, 有些速度調整設定.
 
 ## Credits
  [NCBPFluffyBear](https://github.com/ncbpfluffybear) for their autocrafter code since it helped alot with the Auto-Kitchen.
