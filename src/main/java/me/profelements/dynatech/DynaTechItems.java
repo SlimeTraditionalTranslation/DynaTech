@@ -101,6 +101,17 @@ public class DynaTechItems {
             LoreBuilder.powerCharged(0, 512)
             );
 
+    public static final SlimefunItemStack DIMENSIONAL_HOME = new SlimefunItemStack("DIMENSIONAL_HOME",
+            new CustomItem(SkullItem.fromHash("eb18cf9e1bf7ec57304ae92f2b00d91643cf0b65067dead34fb48baf18e3c385")),
+            "&6維度之家",
+            "",
+            "&f將你傳送到一個獨立的家並返回",
+            "",
+            "&f&o家 甜蜜的家",
+            "",
+            "&7區塊ID: <id>"
+            );
+    
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
             Material.SMOKER,
@@ -172,7 +183,7 @@ public class DynaTechItems {
             Material.BEEHIVE,
             "&6材質蜂巢",
             "",
-            "&f用電力與蜜蜂, 緩慢的產生物質蜂窩.",
+            "&f使用電力與蜜蜂, 慢慢產生物質.",
             "",
             LoreBuilder.radioactive(Radioactivity.HIGH),
             "",

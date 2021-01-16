@@ -23,6 +23,7 @@ import me.profelements.dynatech.items.electric.generators.HydroGenerator;
 import me.profelements.dynatech.items.misc.Bee;
 import me.profelements.dynatech.items.misc.VexGem;
 import me.profelements.dynatech.items.tools.AngelGem;
+import me.profelements.dynatech.items.tools.DimensionalHome;
 import me.profelements.dynatech.items.tools.ElectricalStimulator;
 import me.profelements.dynatech.items.tools.InventoryFilter;
 import me.profelements.dynatech.items.tools.Scoop;
@@ -95,7 +96,7 @@ public class DynaTechItemsSetup {
                         SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE,
                         DynaTechItems.VEX_GEM, DynaTechItems.MACHINE_SCRAP, DynaTechItems.VEX_GEM,
                         SlimefunItems.REINFORCED_PLATE, DynaTechItems.ANCIENT_MACHINE_CORE, SlimefunItems.REINFORCED_PLATE
-                }, 2
+                }, 7
                 ).register(plugin);
 
         new Bee(DynaTechItems.DynaTechGeneral, DynaTechItems.ADVANCED_ROBOTIC_BEE, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -103,7 +104,7 @@ public class DynaTechItemsSetup {
                 SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE, SlimefunItems.REINFORCED_PLATE,
                 DynaTechItems.ANGEL_GEM, DynaTechItems.ADVANCED_MACHINE_SCRAP, DynaTechItems.ANGEL_GEM,
                 SlimefunItems.GOLD_24K_BLOCK, DynaTechItems.ANCIENT_MACHINE_CORE, SlimefunItems.GOLD_24K_BLOCK
-                }, 4
+                }, 10
                 ).register(plugin);
 
         //Backpacks
@@ -143,8 +144,15 @@ public class DynaTechItemsSetup {
                         null, new ItemStack(Material.STICK), null
                 }).register(plugin);
 
+        new DimensionalHome(DynaTechItems.DynaTechGeneral, DynaTechItems.DIMENSIONAL_HOME, RecipeType.MAGIC_WORKBENCH,
+                new ItemStack[] {
+                    null, null, SlimefunItems.GOLD_24K_BLOCK,
+                    SlimefunItems.BRONZE_INGOT, new ItemStack(Material.BLAZE_ROD), null,
+                    SlimefunItems.SYNTHETIC_SAPPHIRE, SlimefunItems.BRONZE_INGOT, null
+                }).register(plugin);
+        
         //Machines
-        if (DynaTech.isIsExoticGardenInstalled()) {
+        if (DynaTech.isExoticGardenInstalled()) {
                 new AutoKitchen(DynaTechItems.DynaTechGeneral, DynaTechItems.AUTO_KITCHEN, RecipeType.ENHANCED_CRAFTING_TABLE,
                         new ItemStack[] {
                         new ItemStack(Material.BRICK), SlimefunItems.ELECTRIC_FURNACE, new ItemStack(Material.BRICK),
@@ -161,9 +169,9 @@ public class DynaTechItemsSetup {
 
         new GrowthChamber(DynaTechItems.DynaTechGeneral, DynaTechItems.GROWTH_CHAMBER, RecipeType.ENHANCED_CRAFTING_TABLE,
                 new ItemStack[] {
-                        SlimefunItems.HARDENED_GLASS,SlimefunItems.HARDENED_GLASS,SlimefunItems.HARDENED_GLASS,
+                        SlimefunItems.HARDENED_GLASS,SlimefunItems.TREE_GROWTH_ACCELERATOR,SlimefunItems.HARDENED_GLASS,
                         new ItemStack(Material.BONE_BLOCK),new ItemStack(Material.GRASS_BLOCK),new ItemStack(Material.BONE_BLOCK),
-                        DynaTechItems.STAINLESS_STEEL,new ItemStack(Material.BONE_BLOCK),DynaTechItems.STAINLESS_STEEL
+                        DynaTechItems.STAINLESS_STEEL,SlimefunItems.CROP_GROWTH_ACCELERATOR_2,DynaTechItems.STAINLESS_STEEL
 
                 })
                 .setEnergyCapacity(512)

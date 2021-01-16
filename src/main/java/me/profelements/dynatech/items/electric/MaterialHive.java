@@ -62,19 +62,19 @@ public class MaterialHive extends AMachine implements Radioactive {
                         secondRemovalAmount += dtBee2.getSpeedMultipler() * (bee2.getAmount() - 1); 
                     }
 
-                    if (bee1.getAmount() == 64 & bee2.getAmount() == 64) {
+                    if (bee1 != null && bee1.getAmount() == 64 && bee2 != null && bee2.getAmount() == 64) {
                         SlimefunItem sfBee1 = SlimefunItem.getByItem(bee1);
                         SlimefunItem sfBee2 = SlimefunItem.getByItem(bee2);
 
-                        if (sfBee1.getId() == sfBee2.getId()) {
+                        if ( sfBee1 != null && sfBee2 != null && sfBee1.getId() == sfBee2.getId()) {
                             switch (sfBee1.getId()) {
                                 case "BEE":
                                     return new MachineRecipe(1500, new ItemStack[] {DynaTechItems.BEE, keyInput}, new ItemStack[] {output});
                                 case "ROBOTIC_BEE":
-                                    return new MachineRecipe(1500, new ItemStack[] {DynaTechItems.BEE, keyInput}, new ItemStack[] {output});
+                                    return new MachineRecipe(900, new ItemStack[] {DynaTechItems.BEE, keyInput}, new ItemStack[] {output});
                                 
                                 case "ADVANCED_ROBOTIC_BEE":
-                                    return new MachineRecipe(900, new ItemStack[] {DynaTechItems.BEE, keyInput}, new ItemStack[] {output});
+                                    return new MachineRecipe(600, new ItemStack[] {DynaTechItems.BEE, keyInput}, new ItemStack[] {output});
                                 
                                 default:
                                     break;
