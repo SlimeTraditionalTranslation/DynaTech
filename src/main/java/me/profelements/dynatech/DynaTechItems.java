@@ -191,6 +191,16 @@ public class DynaTechItems {
             LoreBuilder.powerPerSecond(1024)
             );
 
+    public static final SlimefunItemStack WIRELESS_CHARGER = new SlimefunItemStack("WIRELESS_CHARGER",
+            Material.CLAY,
+            "&6無線充電器",
+            "",
+            "&f無線充電背包內的物品",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.powerPerSecond(16)
+            );
+
     //Generators
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
             Material.COBBLESTONE_WALL,
@@ -222,7 +232,7 @@ public class DynaTechItems {
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(256),
-            LoreBuilder.power(2, " 每個耐久度")
+            LoreBuilder.power(8, " 每個耐久度")
             );
 
     public static final SlimefunItemStack CULINARY_GENERATOR = new SlimefunItemStack("CULINARY_GENERATOR",
