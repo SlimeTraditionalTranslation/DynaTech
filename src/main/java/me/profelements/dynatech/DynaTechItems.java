@@ -25,6 +25,10 @@ public class DynaTechItems {
             new CustomItem(Material.IRON_SHOVEL, "&b使用勺子鏟蜜蜂")
     );
 
+    public static final RecipeType DynaTechStarDustMeteor = new RecipeType(new NamespacedKey(DynaTech.getInstance(), "dt_stardust_meteor"),
+            new CustomItem(Material.FIRE_CHARGE, "&b從流星上掉落的星塵.")
+    );
+
     //Materials
     public static final SlimefunItemStack STAINLESS_STEEL = new SlimefunItemStack("STAINLESS_STEEL", Material.IRON_INGOT, "&6不銹鋼錠");
     public static final SlimefunItemStack STAINLESS_STEEL_ROTOR = new SlimefunItemStack("STAINLESS_STEEL_ROTOR", Material.IRON_BLOCK, "&6不銹鋼轉子");
@@ -32,6 +36,7 @@ public class DynaTechItems {
     public static final SlimefunItemStack VEX_GEM = new SlimefunItemStack("VEX_GEM", SkullItem.fromHash("b91aeca7c17e66d867231b36d96e83c1ede75eaf67ccf3a88dca15d4114ae167"), "&6惱鬼寶石");
     public static final SlimefunItemStack MACHINE_SCRAP = new SlimefunItemStack("MACHINE_SCRAP", SkullItem.fromHash("13ea401c7e02d13cea1de6835ee9f5c47757d399dae5c2b9c3efde6ae63ea4a2"), "&6機器廢料");
     public static final SlimefunItemStack ADVANCED_MACHINE_SCRAP = new SlimefunItemStack("ADVANCED_MACHINE_SCRAP",SkullItem.fromHash("4b57a4c68d1d2c5de978ea6de4db91ef387ca6c37966bb8e7c8826f937e6c3"), "&6高級機器廢料");
+    public static final SlimefunItemStack STAR_DUST = new SlimefunItemStack("STAR_DUST", Material.NETHER_STAR, "&6星塵");
 
     //Bees
     public static final SlimefunItemStack BEE = new SlimefunItemStack("BEE", SkullItem.fromHash("12724a9a4cdd68ba49415560e5be40b4a1c47cb5be1d66aedb52a30e62ef2d47"), "&6蜜蜂");
@@ -246,4 +251,14 @@ public class DynaTechItems {
             LoreBuilder.powerPerSecond(8)
             );
 
+    public static final SlimefunItemStack STARDUST_REACTOR = new SlimefunItemStack("STARDUST_REACTOR",
+            Material.IRON_BLOCK,
+            "&6星塵反應爐",
+            "",
+            "&6使用星塵來產生大量的能源.",
+            "",
+            LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
+            LoreBuilder.powerBuffer(32768),
+            LoreBuilder.powerPerSecond(1024)
+            );
 }
