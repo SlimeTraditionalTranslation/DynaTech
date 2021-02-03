@@ -8,7 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-//import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
+import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 //import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
 import me.profelements.dynatech.items.backpacks.PicnicBasket;
 import me.profelements.dynatech.items.misc.DimensionalHomeDimension;
@@ -28,13 +28,17 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        WorldCreator worldCreator = new WorldCreator("dimensionalhome");
-        worldCreator.generator(new DimensionalHomeDimension());
-        worldCreator.createWorld();
-
         instance = this;
-        //Config cfg = new Config(this);
+        Config cfg = new Config(this);
         //final Metrics metrics = new Metrics(this, 9689);
+
+        if (!cfg.getBoolean("options.disable-dimensionalhome-world")) {
+            WorldCreator worldCreator = new WorldCreator("dimensionalhome");
+            worldCreator.generator(new DimensionalHomeDimension());
+            worldCreator.createWorld();
+        }
+        
+
 
         /*if (cfg.getBoolean("options.auto-update")) {
             new GitHubBuildsUpdater(this, getFile(), "ProfElements/DynaTech/master").start();
