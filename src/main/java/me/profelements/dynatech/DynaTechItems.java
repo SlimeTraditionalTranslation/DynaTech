@@ -116,6 +116,15 @@ public class DynaTechItems {
             "",
             "&7區塊ID: <id>"
             );
+
+    public static final SlimefunItemStack ITEM_BAND_HEALTH = new SlimefunItemStack("ITEM_BAND_HEALTH",
+            new CustomItem(SkullItem.fromHash("f1e2428cb359988f4c4ff0e61de21385c62269de19a69762d773223b75dd1666")),
+            "&6健康物品戒指",
+            "",
+            "&f當應用在裝備或工具時, 將為你提供一級的生命值提升",
+            "",
+            "&f&o力量提升!"
+            );
     
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
@@ -215,6 +224,17 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.powerPerSecond(32)
             );
+
+    public static final SlimefunItemStack BANDAID_MANAGER = new SlimefunItemStack("BANDAID_MANAGER",
+            Material.LAPIS_BLOCK,
+            "&6物品戒指管理器",
+            "",
+            "&f管理物品戒指是否被應用或去除.",
+            "",
+            LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
+            LoreBuilder.powerPerSecond(48)
+            );
+
     //Generators
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
             Material.COBBLESTONE_WALL,

@@ -15,6 +15,7 @@
 - **材質蜂巢** - 一個無限資源產生機, 需要蜜蜂與一個物品輸出堆. 支持的材料在 [這裡](https://github.com/ProfElements/DynaTech/blob/1b6aee96937da31c7bdb84df284392530149ce63/src/main/java/me/profelements/dynatech/items/electric/MaterialHive.java#L169). 對於材質蜂巢, 你投入的每隻蜜蜂都會減少生產材料的時間, 因此128隻蜜蜂會比1隻蜜蜂更好. 請注意, 每種蜜蜂類型的秒數都不同. 檢查蜜蜂部分來獲取更多訊息.
 - **無線充電器** - 在16格方塊半徑範圍內充玩家背包內可充電的物品
 - **種子採摘機** - 從植物材料中提取種子, 支持Exotic Garden的水果, 但不支持精華.
+- **物品戒指管理器** - 管理應用或去除物品戒指.
 
 ## 發電機
 - **水輪發電機** - 從流動的水中產生能量 (將水淹入發電機)
@@ -35,6 +36,9 @@
 - **蜜蜂** - 天然蜜蜂, 每一隻蜜蜂減少2秒鐘在材質蜂巢內的創建資源時間.
 - **機械蜜蜂** - 由神奇魔法與廢料所製成的機械蜜蜂. 減少2秒鐘在材質蜂巢內生產資源的時間.
 - **高級機械蜜蜂** - 機械蜜蜂的高級版本. 減少10秒鐘在材質蜂巢內生產資源的時間.
+
+## 物品戒指
+- **健康物品戒指** - 當應用於裝備或武器時, 穿戴或手持該物品可獲得4顆額外的心.
 
 ## Credits
  [NCBPFluffyBear](https://github.com/ncbpfluffybear) for their autocrafter code since it helped alot with the Auto-Kitchen.
