@@ -38,7 +38,8 @@
 - **高級機械蜜蜂** - 機械蜜蜂的高級版本. 減少10秒鐘在材質蜂巢內生產資源的時間.
 
 ## 物品戒指
-- **健康物品戒指** - 當應用於裝備或武器時, 穿戴或手持該物品可獲得4顆額外的心.
+- **健康物品戒指** - 當應用於裝備或武器時, 穿戴或手持該物品可獲得四顆額外的心.
+- **挖掘加速戒指** - 當應用在裝備或武器時, 穿戴或手持該物品將獲得等級二加速.
 
 ## Credits
  [NCBPFluffyBear](https://github.com/ncbpfluffybear) for their autocrafter code since it helped alot with the Auto-Kitchen.

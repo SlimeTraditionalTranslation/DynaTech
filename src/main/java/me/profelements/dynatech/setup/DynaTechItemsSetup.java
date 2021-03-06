@@ -14,6 +14,7 @@ import me.profelements.dynatech.items.electric.AutoKitchen;
 import me.profelements.dynatech.items.electric.BandaidManager;
 import me.profelements.dynatech.items.electric.BarbedWire;
 import me.profelements.dynatech.items.electric.GrowthChamber;
+import me.profelements.dynatech.items.electric.GrowthChamberMK2;
 import me.profelements.dynatech.items.electric.MaterialHive;
 import me.profelements.dynatech.items.electric.PotionSprinkler;
 import me.profelements.dynatech.items.electric.SeedPlucker;
@@ -182,6 +183,14 @@ public class DynaTechItemsSetup {
                 }, new PotionEffect[] {new PotionEffect(PotionEffectType.HEALTH_BOOST, 20*15, 1, true) }
         ).register(plugin);
 
+        new ItemBand(DynaTechItems.DynaTechGeneral, DynaTechItems.ITEM_BAND_HASTE, RecipeType.MAGIC_WORKBENCH,
+                new ItemStack[] {
+                    SlimefunItems.COBALT_PICKAXE, new ItemStack(Material.NETHER_STAR), SlimefunItems.COBALT_PICKAXE,
+                    new ItemStack(Material.NETHER_STAR), DynaTechItems.VEX_GEM, new ItemStack(Material.NETHER_STAR),
+                    SlimefunItems.COBALT_PICKAXE, new ItemStack(Material.NETHER_STAR), SlimefunItems.COBALT_PICKAXE
+                }, new PotionEffect[] {new PotionEffect(PotionEffectType.FAST_DIGGING, 20*15, 1, true) }    
+        ).register(plugin);
+
         //Machines
         if (DynaTech.isExoticGardenInstalled()) {
                 new AutoKitchen(DynaTechItems.DynaTechGeneral, DynaTechItems.AUTO_KITCHEN, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -208,6 +217,18 @@ public class DynaTechItemsSetup {
                 .setEnergyCapacity(512)
                 .setEnergyConsumption(32)
                 .setProcessingSpeed(1)
+                .register(plugin);
+
+        new GrowthChamberMK2(DynaTechItems.DynaTechGeneral, DynaTechItems.GROWTH_CHAMBER_MK2, RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[] {
+                        SlimefunItems.STEEL_PLATE,new ItemStack(Material.LIME_STAINED_GLASS),SlimefunItems.STEEL_PLATE,
+                        new ItemStack(Material.BONE_BLOCK),new ItemStack(Material.GRASS_BLOCK),new ItemStack(Material.BONE_BLOCK),
+                        DynaTechItems.STAINLESS_STEEL_ROTOR,DynaTechItems.GROWTH_CHAMBER,DynaTechItems.STAINLESS_STEEL_ROTOR
+
+                })
+                .setEnergyCapacity(1024)
+                .setEnergyConsumption(64)
+                .setProcessingSpeed(4)
                 .register(plugin);
 
         new AntigravityBubble(DynaTechItems.DynaTechGeneral, DynaTechItems.ANTIGRAVITY_BUBBLE, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -310,6 +331,16 @@ public class DynaTechItemsSetup {
                 })
                 .setEnergyCapacity(256)
                 .setEnergyProduction(16)
+                .register(plugin);
+
+        new HydroGenerator(DynaTechItems.DynaTechGeneral, DynaTechItems.WATER_TURBINE, RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[] {
+                        DynaTechItems.WATER_MILL, DynaTechItems.STAINLESS_STEEL, DynaTechItems.WATER_MILL,
+                        SlimefunItems.SOLDER_INGOT, SlimefunItems.GOLD_8K, SlimefunItems.SOLDER_INGOT,
+                        DynaTechItems.WATER_MILL, DynaTechItems.STAINLESS_STEEL, DynaTechItems.WATER_MILL
+                })
+                .setEnergyCapacity(512)
+                .setEnergyProduction(64)
                 .register(plugin);
 
         new DragonEggGenerator(DynaTechItems.DynaTechGeneral, DynaTechItems.DRAGON_GENERATOR, RecipeType.ENHANCED_CRAFTING_TABLE,

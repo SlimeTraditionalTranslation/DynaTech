@@ -110,7 +110,8 @@ public class DynaTechItems {
             new CustomItem(SkullItem.fromHash("eb18cf9e1bf7ec57304ae92f2b00d91643cf0b65067dead34fb48baf18e3c385")),
             "&6維度之家",
             "",
-            "&f將你傳送到一個獨立的家並返回",
+            "&f將你傳送到一個",
+            "&f分開的世界家並返回",
             "",
             "&f&o家 甜蜜的家",
             "",
@@ -121,7 +122,18 @@ public class DynaTechItems {
             new CustomItem(SkullItem.fromHash("f1e2428cb359988f4c4ff0e61de21385c62269de19a69762d773223b75dd1666")),
             "&6健康物品戒指",
             "",
-            "&f當應用在裝備或工具時, 將為你提供一級的生命值提升",
+            "&f當應用在裝備或工具時",
+            "&f將為你提供二級的生命值提升",
+            "",
+            "&f&o力量提升!"
+            );
+
+    public static final SlimefunItemStack ITEM_BAND_HASTE = new SlimefunItemStack("ITEM_BAND_HASTE",
+            new CustomItem(SkullItem.fromHash("4f01ec6331a3bc30a8204ec56398d08ca38788556bca9b81d776f6238d567367")),
+            "&6挖掘加速戒指",
+            "",
+            "&f當應用在裝備或工具時",
+            "&f將為你提供二級的挖掘加速",
             "",
             "&f&o力量提升!"
             );
@@ -151,6 +163,19 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.speed(1),
             LoreBuilder.powerPerSecond(32)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_MK2",
+            Material.LIME_STAINED_GLASS,
+            "&6生長倉 MK2",
+            "",
+            "&f自動生長一些植物.",
+            "",
+            "&f&o就像是一個小溫室!",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(4),
+            LoreBuilder.powerPerSecond(64)
             );
 
     public static final SlimefunItemStack ANTIGRAVITY_BUBBLE = new SlimefunItemStack("ANTIGRAVITY_BUBBLE",
@@ -229,7 +254,7 @@ public class DynaTechItems {
             Material.LAPIS_BLOCK,
             "&6物品戒指管理器",
             "",
-            "&f管理物品戒指是否被應用或去除.",
+            "&f管理物品戒指",
             "",
             LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
             LoreBuilder.powerPerSecond(48)
@@ -247,6 +272,17 @@ public class DynaTechItems {
             LoreBuilder.powerPerSecond(16)
             );
 
+    public static final SlimefunItemStack WATER_TURBINE = new SlimefunItemStack("WATER_TURBINE",
+            Material.PRISMARINE_WALL,
+            "&6水力渦輪機",
+            "",
+            "&f通過流動的水來產生能源",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
+            LoreBuilder.powerBuffer(512),
+            LoreBuilder.powerPerSecond(64)
+            );
+
     public static final SlimefunItemStack DRAGON_GENERATOR = new SlimefunItemStack("DRAGON_GENERATOR",
             Material.GRAY_CONCRETE
             ,"&6龍蛋發電機",
@@ -262,7 +298,8 @@ public class DynaTechItems {
             Material.SPRUCE_WOOD,
             "&6切屑發電機",
             "",
-            "&f從損壞的物品提取能源 (物品必須有耐久度)",
+            "&f從損壞的物品提取能源",
+            "&f(基於有耐久度的物品)",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilder.powerBuffer(256),
