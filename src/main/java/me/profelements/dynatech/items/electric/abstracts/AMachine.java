@@ -113,8 +113,6 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
             return true;
 
         });
-
-        registerDefaultRecipes();
     }
 
     public void blockExtras(Block b) {
@@ -318,7 +316,7 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
     }
 
     public void registerRecipe(MachineRecipe recipe) {
-        recipe.setTicks(recipe.getTicks() / getSpeed());
+        recipe.setTicks(recipe.getTicks() / this.getSpeed());
         recipes.add(recipe);
     }
 
@@ -363,7 +361,7 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
     }
 
     public int getSpeed() {
-        return processingSpeed;
+        return this.processingSpeed;
     }
 
     public final AMachine setEnergyCapacity(int capacity) {
@@ -414,6 +412,8 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
             warn("The processing speed has not been configured correctly. The Item was disabled.");
             warn("Make sure to call '" + getClass().getSimpleName() + "#setProcessingSpeed(...)' before registering!");
         }
+
+        registerDefaultRecipes();
 
         if (getCapacity() > 0 && getEnergyConsumption() > 0 && getSpeed() > 0) {
             super.register(addon);

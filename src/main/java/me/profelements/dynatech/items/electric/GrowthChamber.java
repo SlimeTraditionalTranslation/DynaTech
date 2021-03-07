@@ -105,6 +105,4 @@ public class GrowthChamber extends AMachine {
         return "GROWTH_CHAMBER";
     }
 
-
-
 }

@@ -169,13 +169,13 @@ public class DynaTechItems {
             Material.LIME_STAINED_GLASS,
             "&6生長倉 MK2",
             "",
-            "&f自動生長一些植物.",
-            "",
+            "&f自動生長大多數植物.",
+            "&c3x 生產速度",
             "&f&o就像是一個小溫室!",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
             LoreBuilder.speed(4),
-            LoreBuilder.powerPerSecond(64)
+            LoreBuilder.powerPerSecond(80)
             );
 
     public static final SlimefunItemStack ANTIGRAVITY_BUBBLE = new SlimefunItemStack("ANTIGRAVITY_BUBBLE",
