@@ -156,7 +156,7 @@ public class DynaTechItems {
             Material.GREEN_STAINED_GLASS,
             "&6生長倉",
             "",
-            "&f自動生長一些植物.",
+            "&f自動生長&e植物&f.",
             "",
             "&f&o就像是一個小溫室!",
             "",
@@ -169,13 +169,85 @@ public class DynaTechItems {
             Material.LIME_STAINED_GLASS,
             "&6生長倉 MK2",
             "",
-            "&f自動生長大多數植物.",
-            "&c3x 生產速度",
+            "&f自動生長&e植物&f.",
+            "",
             "&f&o就像是一個小溫室!",
             "",
+            "&c3x 生產速度.",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-            LoreBuilder.speed(4),
-            LoreBuilder.powerPerSecond(80)
+            LoreBuilder.speed(3),
+            LoreBuilder.powerPerSecond(128)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_END = new SlimefunItemStack("GROWTH_CHAMBER_END",
+            Material.MAGENTA_STAINED_GLASS,
+            "&d終界生長倉",
+            "",
+            "&f自動生長&d歌萊花.",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(1),
+            LoreBuilder.powerPerSecond(32)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_END_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_END_MK2",
+            Material.PURPLE_STAINED_GLASS,
+            "&d終界生長倉 MK2",
+            "",
+            "&f自動生長&d歌萊花.",
+            "",
+            "&c3x 生產速度.",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(3),
+            LoreBuilder.powerPerSecond(128)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_NETHER = new SlimefunItemStack("GROWTH_CHAMBER_NETHER",
+            Material.RED_STAINED_GLASS,
+            "&c地獄生長倉",
+            "",
+            "&f自動生長&c地獄&f植物.",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(1),
+            LoreBuilder.powerPerSecond(32)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_NETHER_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_NETHER_MK2",
+            Material.RED_STAINED_GLASS,
+            "&c地獄生長倉 MK2",
+            "",
+            "&f自動生長&c地獄&f植物.",
+            "",
+            "&c3x 生產速度.",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(3),
+            LoreBuilder.powerPerSecond(128)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_OCEAN = new SlimefunItemStack("GROWTH_CHAMBER_OCEAN",
+            Material.CYAN_STAINED_GLASS,
+            "&b海洋生長倉",
+            "",
+            "&f自動生長&9水中&f植物.",
+            "可以使死亡的珊瑚復活!",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(1),
+            LoreBuilder.powerPerSecond(32)
+            );
+
+    public static final SlimefunItemStack GROWTH_CHAMBER_OCEAN_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_OCEAN_MK2",
+            Material.LIGHT_BLUE_STAINED_GLASS,
+            "&b海洋生長倉 MK2",
+            "",
+            "&f自動生長&9水中&f植物.",
+            "可以使死亡的珊瑚復活!",
+            "",
+            "&c3x 生產速度.",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.speed(3),
+            LoreBuilder.powerPerSecond(128)
             );
 
     public static final SlimefunItemStack ANTIGRAVITY_BUBBLE = new SlimefunItemStack("ANTIGRAVITY_BUBBLE",
