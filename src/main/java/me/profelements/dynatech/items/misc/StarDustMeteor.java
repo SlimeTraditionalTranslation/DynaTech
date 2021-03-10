@@ -45,6 +45,7 @@ public class StarDustMeteor extends SlimefunItem implements NotPlaceable, GEORes
       return STARDUST_METEOR.clone();
     }
   
+    @Nonnull
     @Override
     public String getName() {
       return "星塵流星";

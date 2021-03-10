@@ -9,8 +9,6 @@ import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 import io.github.thebusybiscuit.slimefun4.utils.itemstack.ItemStackWrapper;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ChestMenu;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.ClickAction;
 import me.mrCookieSlime.Slimefun.Lists.RecipeType;
 import me.mrCookieSlime.Slimefun.Objects.Category;
 import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
@@ -29,7 +27,6 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
@@ -115,11 +112,9 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
         });
     }
 
-    public void blockExtras(Block b) {
-    }
+    public void blockExtras(Block b) { }
 
-    public void newMachineInstance(BlockMenu menu, Block b) {
-    }
+    public void newMachineInstance(BlockMenu menu, Block b) { }
 
     @ParametersAreNonnullByDefault
     public AMachine(Category category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, ItemStack recipeOutput) {
@@ -135,11 +130,6 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
         preset.drawBackground(ChestMenuUtils.getOutputSlotTexture(), borders.get(2));
 
         preset.addItem(getProgressBarSlot(), new CustomItem(Material.BLACK_STAINED_GLASS_PANE, " "), ChestMenuUtils.getEmptyClickHandler());
-
-        ChestMenu.MenuClickHandler outputSlotHandler = (p, slot, cursor, action) -> cursor == null || cursor.getType() == Material.AIR;
-        for (int i : getOutputSlots()) {
-            preset.addMenuClickHandler(i, outputSlotHandler);
-        }
     }
 
     public boolean isGraphical() {
@@ -317,6 +307,7 @@ public abstract class AMachine extends SlimefunItem implements EnergyNetComponen
 
     public abstract String getMachineIdentifier();
 
+    @Nonnull
     @Override
     public EnergyNetComponentType getEnergyComponentType() {
         return EnergyNetComponentType.CONSUMER;

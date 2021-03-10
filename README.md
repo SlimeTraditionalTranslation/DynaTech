@@ -2,6 +2,12 @@
 我製作一套物品和機器, 使這些東西更加簡單與有趣.
 其中大多數可能過於強大或過於不足.
 
+### [下載繁體翻譯版](https://xmikux.github.io/builds/xMikux/DynaTech/master/)
+[![Build Status](https://xmikux.github.io/builds/xMikux/DynaTech/master/badge.svg)](https://xmikux.github.io/builds/xMikux/DynaTech/master)
+
+### [Download](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/)
+[![Build Status](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/badge.svg)](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master)
+
 此為**非官方**版本, 請勿在該作者的問題追蹤內回報!
 [原專案連結](https://github.com/ProfElements/DynaTech)
 
