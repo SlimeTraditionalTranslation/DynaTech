@@ -332,6 +332,16 @@ public class DynaTechItems {
             LoreBuilder.powerPerSecond(48)
             );
 
+    public static final SlimefunItemStack ORECHID = new SlimefunItemStack("ORECHID",
+            Material.WITHER_ROSE,
+            "&6礦物花",
+            "",
+            "&f使用石頭或地獄石和電力, 可以製造它們各自的礦物.",
+            "",
+            LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
+            LoreBuilder.power(1024, " 每個方塊轉換.")
+           );
+
     //Generators
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
             Material.COBBLESTONE_WALL,
