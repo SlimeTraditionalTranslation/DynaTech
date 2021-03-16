@@ -48,6 +48,9 @@
 - **健康物品戒指** - 當應用於裝備或武器時, 穿戴或手持該物品可獲得四顆額外的心.
 - **挖掘加速戒指** - 當應用在裝備或武器時, 穿戴或手持該物品將獲得等級二加速.
 
+## 整合 
+ - **惱鬼怪物資料卡** - 如果有安裝 InfinityExpansion (無限附加), 那麼你將會有惱鬼怪物資料卡, 來幫助你獲取幽靈精華與惱鬼寶石
+
 ## Credits
  [NCBPFluffyBear](https://github.com/ncbpfluffybear) for their autocrafter code since it helped alot with the Auto-Kitchen.
 
