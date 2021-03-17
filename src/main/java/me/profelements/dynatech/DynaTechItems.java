@@ -334,7 +334,7 @@ public class DynaTechItems {
             );
 
     public static final SlimefunItemStack ORECHID = new SlimefunItemStack("ORECHID",
-            Material.WITHER_ROSE,
+            Material.END_ROD,
             "&6礦物花",
             "",
             "&f使用石頭或地獄石和電力, 可以製造它們各自的礦物.",
