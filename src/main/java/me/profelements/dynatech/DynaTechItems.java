@@ -25,9 +25,9 @@ public class DynaTechItems {
             new CustomItem(Material.IRON_SHOVEL, "&b使用勺子鏟蜜蜂")
     );
 
-    public static final RecipeType DynaTechStarDustMeteor = new RecipeType(new NamespacedKey(DynaTech.getInstance(), "dt_stardust_meteor"),
-            new CustomItem(Material.FIRE_CHARGE, "&b從流星上掉落的星塵.")
-    );
+    //public static final RecipeType DynaTechStarDustMeteor = new RecipeType(new NamespacedKey(DynaTech.getInstance(), "dt_stardust_meteor"),
+    //        new CustomItem(Material.FIRE_CHARGE, "&b從流星上掉落的星塵.")
+    //);
 
     //Materials
     public static final SlimefunItemStack STAINLESS_STEEL = new SlimefunItemStack("STAINLESS_STEEL", Material.IRON_INGOT, "&6不銹鋼錠");
@@ -342,6 +342,32 @@ public class DynaTechItems {
             LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
             LoreBuilder.power(1024, " 每個方塊轉換.")
            );
+
+    public static final SlimefunItemStack WIRELESS_ENERGY_POINT = new SlimefunItemStack("WIRELESS_ENERGY_POINT",
+            new CustomItem(SkullItem.fromHash("335a21d95e8597759fb259c951ea68e1ad3374ca41e56ef126ffabfe03c1e0")),
+            "&6無線能量點",
+            "",
+            "&f無線傳輸能源",
+            "&f來自無線能量庫",
+            "右鍵點擊在無線能量庫來連接!",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+            LoreBuilder.powerBuffer(5120),
+            LoreBuilder.powerPerSecond(1024),
+            ""
+            );
+    public static final SlimefunItemStack WIRELESS_ENERGY_BANK = new SlimefunItemStack("WIRELESS_ENERGY_BANK",
+            Material.SNOW_BLOCK,
+            "&6無線能量庫",
+            "",
+            "&f儲存能源給",
+            "&f無線能量點使用.",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.CAPACITOR),
+            LoreBuilder.powerBuffer(10240),
+            LoreBuilder.powerPerSecond(1024),
+            ""
+            );
 
     //Generators
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
