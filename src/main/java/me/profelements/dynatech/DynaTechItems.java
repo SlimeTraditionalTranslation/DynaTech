@@ -369,6 +369,32 @@ public class DynaTechItems {
             ""
             );
 
+    public static final SlimefunItemStack WIRELESS_ITEM_INPUT = new SlimefunItemStack("WIRELESS_ITEM_INPUT",
+           new CustomItem(SkullItem.fromHash("abb55560c695d976b346e188d3df2bcd8c5aa32b933141a9715c42f64cb6cee")),
+           "&6無線物品輸入",
+           "",
+           "&f以無線的方式傳輸物品",
+           "&f 到無線物品輸出",
+           "",
+           LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+           LoreBuilder.powerBuffer(1024),
+           LoreBuilder.power(8, " 每組物品"),
+           ""
+           );
+
+    public static final SlimefunItemStack WIRELESS_ITEM_OUTPUT = new SlimefunItemStack("WIRELESS_ITEM_OUTPUT",
+           new CustomItem(SkullItem.fromHash("c510d9b61ca333d2946c61a26cb17e374d4adb573b46afdebaf89f65ba5d4ae2")),
+           "&6無線物品輸出",
+           "",
+           "&f以無線的方式傳輸物品",
+           "&f從無線物品輸入",
+            "",
+            LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE), 
+            LoreBuilder.powerBuffer(1024),
+            LoreBuilder.power(8, " 每組物品"),
+            ""
+    );
+
     //Generators
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
             Material.COBBLESTONE_WALL,
