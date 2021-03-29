@@ -388,6 +388,7 @@ public class DynaTechItems {
            "",
            "&f以無線的方式傳輸物品",
            "&f從無線物品輸入",
+           "右鍵點擊無線物品輸出來連接!",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE), 
             LoreBuilder.powerBuffer(1024),

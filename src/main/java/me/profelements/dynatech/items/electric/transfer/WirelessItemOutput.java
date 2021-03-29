@@ -170,8 +170,6 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
     protected void tick(Block b) {
         String wirelessLocation = BlockStorage.getLocationInfo(b.getLocation(), "wireless-input-location");
         if (wirelessLocation != null) {
-            BlockMenu menu = BlockStorage.getInventory(b);
-            updateKnowledgePane(menu, getCharge(b.getLocation()));
             sendItemsFromInput(b, wirelessLocation);
             
         }
@@ -192,6 +190,7 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
         if (wirelessItemInput != null && BlockStorage.checkID(wirelessItemInput) != null && BlockStorage.checkID(wirelessItemInput).equals(DynaTechItems.WIRELESS_ITEM_INPUT.getItemId())) {
             BlockMenu input = BlockStorage.getInventory(wirelessItemInput);
             BlockMenu output = BlockStorage.getInventory(b);
+            updateKnowledgePane(output, getCharge(b.getLocation()));
             
             for (int i : getOutputSlots()) {
                 if (getCharge(wirelessItemInput) < getEnergyConsumption() || getCharge(b.getLocation()) < getEnergyConsumption()) {
@@ -219,7 +218,8 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
         lore.clear();
         lore.add(" ");
         lore.add(ChatColor.WHITE +"目前電量: " + currentCharge);
-        lore.add(ChatColor.WHITE +"目前狀態: 有趣的.");
+        lore.add(ChatColor.WHITE +"目前狀態: " + ChatColor.RED + "連接");
+        knowledgePane.setType(Material.RED_STAINED_GLASS_PANE);
 
         im.setLore(lore);
         knowledgePane.setItemMeta(im);
@@ -228,7 +228,7 @@ public class WirelessItemOutput extends SlimefunItem implements EnergyNetCompone
     //Boilerplate for machines.
     public void constructMenu(BlockMenuPreset preset) {
         preset.drawBackground(ChestMenuUtils.getOutputSlotTexture(), getBorder());
-        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知識面板"), ChestMenuUtils.getEmptyClickHandler());
+        preset.addItem(4, new CustomItem(Material.PURPLE_STAINED_GLASS_PANE, "&f知識面板", "&f目前電量: 未知", "&f目前狀態: 未連接"), ChestMenuUtils.getEmptyClickHandler());
     }
 
     
