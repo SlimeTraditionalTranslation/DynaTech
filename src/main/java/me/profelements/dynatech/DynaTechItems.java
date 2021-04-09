@@ -38,6 +38,7 @@ public class DynaTechItems {
     public static final SlimefunItemStack ADVANCED_MACHINE_SCRAP = new SlimefunItemStack("ADVANCED_MACHINE_SCRAP",SkullItem.fromHash("4b57a4c68d1d2c5de978ea6de4db91ef387ca6c37966bb8e7c8826f937e6c3"), "&6高級機器廢料");
     public static final SlimefunItemStack STAR_DUST = new SlimefunItemStack("STAR_DUST", Material.NETHER_STAR, "&6星塵");
     public static final SlimefunItemStack GHOSTLY_ESSENCE = new SlimefunItemStack("GHOSTLY_ESSENCE", Material.WHITE_DYE, "&6幽靈精華");
+    public static final SlimefunItemStack TESSERACTING_OBJ = new SlimefunItemStack("TESSERACTING_OBJ", Material.MUSHROOM_STEM, "&6光學物件", "&f&o它在你手中閃爍與移動");
 
     //Bees
     public static final SlimefunItemStack BEE = new SlimefunItemStack("BEE", SkullItem.fromHash("12724a9a4cdd68ba49415560e5be40b4a1c47cb5be1d66aedb52a30e62ef2d47"), "&6蜜蜂");
@@ -138,6 +139,17 @@ public class DynaTechItems {
             "",
             "&f&o力量提升!"
             ); 
+            
+    public static final SlimefunItemStack TESSERACT_BINDER = new SlimefunItemStack("TESSERACT_BINDER",
+            Material.NETHERITE_HOE,
+            "&6光學綁定儀",
+            "",
+            "&f 用於綁定兩個光學傳輸器.",
+            "",
+            "&f右鍵點擊獲取光學傳輸器的位置",
+            "&f蹲下右鍵以將位置綁定至光學傳輸器",
+            ""
+            );
             
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
@@ -394,6 +406,20 @@ public class DynaTechItems {
             LoreBuilder.powerBuffer(1024),
             LoreBuilder.power(8, " 每組物品"),
             ""
+    );
+
+    public static final SlimefunItemStack TESSERACT = new SlimefunItemStack("TESSERACT",
+            Material.PURPUR_BLOCK, 
+            "&6光學傳輸器",
+            "",
+            "&f無線傳輸物品與能源",
+            "&f甚至可以雙向傳輸!",
+            "右鍵另一個光學傳輸器來連接!",
+            "",
+            LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
+            LoreBuilder.powerBuffer(65535),
+            LoreBuilder.powerPerSecond(1024),
+            ""  
     );
 
     //Generators
