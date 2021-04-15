@@ -2,6 +2,8 @@
 我製作一套物品和機器, 使這些東西更加簡單與有趣.
 其中大多數可能過於強大或過於不足.
 
+**此插件需求 JAVA 11**
+
 ### [下載繁體翻譯版](https://xmikux.github.io/builds/xMikux/DynaTech/master/)
 [![Build Status](https://xmikux.github.io/builds/xMikux/DynaTech/master/badge.svg)](https://xmikux.github.io/builds/xMikux/DynaTech/master)
 
