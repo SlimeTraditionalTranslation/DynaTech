@@ -20,7 +20,7 @@ public class DynaTechItems {
     
     //Categories
     public static final MultiCategory DT_GENERAL = new MultiCategory(new NamespacedKey(DynaTech.getInstance(), "DT_GENERAL"), new CustomItem(Material.CONDUIT, "&bDyna科技"));
-    public static final SubCategory DT_RESOURCES = new SubCategory(new NamespacedKey(DynaTech.getInstance(), "DT_RESOURCES"), DT_GENERAL, new CustomItem(Material.PUFFERFISH, "&bDyna科技 資原"));
+    public static final SubCategory DT_RESOURCES = new SubCategory(new NamespacedKey(DynaTech.getInstance(), "DT_RESOURCES"), DT_GENERAL, new CustomItem(Material.PUFFERFISH, "&bDyna科技 資源"));
     public static final SubCategory DT_TOOLS = new SubCategory(new NamespacedKey(DynaTech.getInstance(), "DT_TOOLS"), DT_GENERAL, new CustomItem(Material.DIAMOND_AXE, "&bDyna科技 工具"));
     public static final SubCategory DT_MACHINES = new SubCategory(new NamespacedKey(DynaTech.getInstance(), "DT_MACHINES"), DT_GENERAL, new CustomItem(Material.SEA_LANTERN, "&bDyna科技 機器"));
     public static final SubCategory DT_GENERATORS = new SubCategory(new NamespacedKey(DynaTech.getInstance(), "DT_GENERATORS"), DT_GENERAL, new CustomItem(Material.PRISMARINE_BRICKS, "&bDyna科技 發電機"));
@@ -399,7 +399,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(8, " per stack of items"),
+        LoreBuilder.power(8, " 每組物品"),
         ""
     );
 
@@ -413,7 +413,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE), 
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(8, " per stack of items"),
+        LoreBuilder.power(8, " 每組物品"),
         ""
     );
 
@@ -474,7 +474,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(256),
-        LoreBuilder.power(8, " per durability point")
+        LoreBuilder.power(8, " 每個耐久度")
     );
 
     public static final SlimefunItemStack CULINARY_GENERATOR = new SlimefunItemStack("CULINARY_GENERATOR",
