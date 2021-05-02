@@ -160,6 +160,17 @@ public class DynaTechItems {
         ""
     );
 
+    public static final SlimefunItemStack LIQUID_TANK = new SlimefunItemStack("LIQUID_TANK",
+        Material.BUCKET,
+        "&6隨身液體儲存罐",
+        "",
+        "&f簡單的液體掠奪者.",
+        "",
+        "&f裝載液體: NO_FLUID",
+        "&f容量: 0mb / 16000",
+        ""
+    );
+
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
         Material.SMOKER,
