@@ -14,6 +14,8 @@ import me.mrCookieSlime.Slimefun.cscorelib2.skull.SkullItem;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 
+import dev.j3fftw.extrautils.utils.LoreBuilderDynamic;
+
 public class DynaTechItems {
 
     private DynaTechItems() {}
@@ -170,6 +172,14 @@ public class DynaTechItems {
         "&f容量: 0mb / 16000",
         ""
     );
+    
+    public static final SlimefunItemStack WITHER_GOLEM = new SlimefunItemStack("WITHER_GOLEM",
+        Material.WITHER_SKELETON_SKULL,
+        "&6凋零魔像多重方塊",
+        "",
+        "生成凋零骷髏",
+        ""
+    );
 
     //Machines
     public static final SlimefunItemStack AUTO_KITCHEN = new SlimefunItemStack("AUTO_KITCHEN",
@@ -182,7 +192,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilder.powerPerSecond(16)
+        LoreBuilderDynamic.powerPerSecond(16)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER = new SlimefunItemStack("GROWTH_CHAMBER",
@@ -195,7 +205,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_MK2",
@@ -209,7 +219,7 @@ public class DynaTechItems {
         "&c3x 生產速度.",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilder.powerPerSecond(128)
+        LoreBuilderDynamic.powerPerSecond(128)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_END = new SlimefunItemStack("GROWTH_CHAMBER_END",
@@ -220,7 +230,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_END_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_END_MK2",
@@ -232,7 +242,7 @@ public class DynaTechItems {
         "&c3x 生產速度.",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilder.powerPerSecond(128)      
+        LoreBuilderDynamic.powerPerSecond(128)      
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_NETHER = new SlimefunItemStack("GROWTH_CHAMBER_NETHER",
@@ -243,7 +253,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_NETHER_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_NETHER_MK2",
@@ -255,7 +265,7 @@ public class DynaTechItems {
         "&c3x 生產速度.",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilder.powerPerSecond(128)
+        LoreBuilderDynamic.powerPerSecond(128)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_OCEAN = new SlimefunItemStack("GROWTH_CHAMBER_OCEAN",
@@ -267,7 +277,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_OCEAN_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_OCEAN_MK2",
@@ -280,7 +290,7 @@ public class DynaTechItems {
         "&c3x 生產速度.",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilder.powerPerSecond(128)
+        LoreBuilderDynamic.powerPerSecond(128)
     );
 
     public static final SlimefunItemStack ANTIGRAVITY_BUBBLE = new SlimefunItemStack("ANTIGRAVITY_BUBBLE",
@@ -290,7 +300,7 @@ public class DynaTechItems {
         "&f 創造飛行在45格方塊範圍內",
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(128)
+        LoreBuilderDynamic.powerPerSecond(128)
     );
 
     public static final SlimefunItemStack WEATHER_CONTROLLER = new SlimefunItemStack("WEATHER_CONTROLLER",
@@ -300,7 +310,7 @@ public class DynaTechItems {
         "&f給予特定的物品來控制天氣.",
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack POTION_SPRINKLER = new SlimefunItemStack("POTION_SPRINKLER",
@@ -310,7 +320,7 @@ public class DynaTechItems {
         "&f範圍性添加多人效果的藥水裝置.",
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
     
     public static final SlimefunItemStack BARBED_WIRE = new SlimefunItemStack("BARBED_WIRE",
@@ -320,7 +330,7 @@ public class DynaTechItems {
         "&f在範圍內推開怪物.",
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(16)
+        LoreBuilderDynamic.powerPerSecond(16)
     );        
     
     public static final SlimefunItemStack MATERIAL_HIVE = new SlimefunItemStack("MATERIAL_HIVE",
@@ -332,7 +342,7 @@ public class DynaTechItems {
         LoreBuilder.radioactive(Radioactivity.HIGH),
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(1024)
+        LoreBuilderDynamic.powerPerSecond(1024)
     );
 
     public static final SlimefunItemStack WIRELESS_CHARGER = new SlimefunItemStack("WIRELESS_CHARGER",
@@ -342,7 +352,7 @@ public class DynaTechItems {
         "&f無線充電背包內的物品",
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(16)
+        LoreBuilderDynamic.powerPerSecond(16)
     );
 
     public static final SlimefunItemStack SEED_PLUCKER = new SlimefunItemStack("SEED_PLUCKER",
@@ -352,7 +362,7 @@ public class DynaTechItems {
         "&f從植物中取出種子.",
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack BANDAID_MANAGER = new SlimefunItemStack("BANDAID_MANAGER",
@@ -362,7 +372,7 @@ public class DynaTechItems {
         "&f管理物品戒指",
         "",
         LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-        LoreBuilder.powerPerSecond(48)
+        LoreBuilderDynamic.powerPerSecond(48)
     );
 
     public static final SlimefunItemStack ORECHID = new SlimefunItemStack("ORECHID",
@@ -372,7 +382,7 @@ public class DynaTechItems {
         "&f使用石頭或地獄石和電力, 可以製造它們各自的礦物.",
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-        LoreBuilder.power(1024, " 每個方塊轉換.")
+        LoreBuilderDynamic.power(1024, " 每個方塊轉換.")
    );
 
     public static final SlimefunItemStack WIRELESS_ENERGY_POINT = new SlimefunItemStack("WIRELESS_ENERGY_POINT",
@@ -385,7 +395,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.powerBuffer(5120),
-        LoreBuilder.powerPerSecond(1024),
+        LoreBuilderDynamic.powerPerSecond(1024),
         ""
     );
     public static final SlimefunItemStack WIRELESS_ENERGY_BANK = new SlimefunItemStack("WIRELESS_ENERGY_BANK",
@@ -397,7 +407,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.CAPACITOR),
         LoreBuilder.powerBuffer(10240),
-        LoreBuilder.powerPerSecond(1024),
+        LoreBuilderDynamic.powerPerSecond(1024),
         ""
     );
 
@@ -410,7 +420,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(8, " 每組物品"),
+        LoreBuilderDynamic.power(8, " 每組物品"),
         ""
     );
 
@@ -424,7 +434,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE), 
         LoreBuilder.powerBuffer(1024),
-        LoreBuilder.power(8, " 每組物品"),
+        LoreBuilderDynamic.power(8, " 每組物品"),
         ""
     );
 
@@ -438,7 +448,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
         LoreBuilder.powerBuffer(65535),
-        LoreBuilder.powerPerSecond(1024),
+        LoreBuilderDynamic.powerPerSecond(1024),
         ""  
     );
 
@@ -451,7 +461,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(128),
-        LoreBuilder.powerPerSecond(16)
+        LoreBuilderDynamic.powerPerSecond(16)
     );
 
     public static final SlimefunItemStack WATER_TURBINE = new SlimefunItemStack("WATER_TURBINE",
@@ -462,7 +472,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(512),
-        LoreBuilder.powerPerSecond(64)
+        LoreBuilderDynamic.powerPerSecond(64)
     );
 
     public static final SlimefunItemStack DRAGON_GENERATOR = new SlimefunItemStack("DRAGON_GENERATOR",
@@ -473,7 +483,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(512),
-        LoreBuilder.powerPerSecond(32)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack CHIPPING_GENERATOR = new SlimefunItemStack("CHIPPING_GENERATOR",
@@ -485,7 +495,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(256),
-        LoreBuilder.power(8, " 每個耐久度")
+        LoreBuilderDynamic.power(8, " 每個耐久度")
     );
 
     public static final SlimefunItemStack CULINARY_GENERATOR = new SlimefunItemStack("CULINARY_GENERATOR",
@@ -496,7 +506,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(256),
-        LoreBuilder.powerPerSecond(8)
+        LoreBuilderDynamic.powerPerSecond(8)
     );
 
     public static final SlimefunItemStack STARDUST_REACTOR = new SlimefunItemStack("STARDUST_REACTOR",
@@ -507,6 +517,6 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.GENERATOR),
         LoreBuilder.powerBuffer(32768),
-        LoreBuilder.powerPerSecond(1024)
+        LoreBuilderDynamic.powerPerSecond(1024)
     );
 }
