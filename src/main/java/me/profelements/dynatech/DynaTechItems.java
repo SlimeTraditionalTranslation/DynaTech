@@ -168,6 +168,9 @@ public class DynaTechItems {
         "",
         "&f簡單的液體掠奪者.",
         "",
+        "右鍵點擊來裝液體",
+        "Shift 點擊來放置液體",
+        "",
         "&f裝載液體: NO_FLUID",
         "&f容量: 0mb / 16000",
         ""
