@@ -4,8 +4,8 @@
 
 **該插件需求JAVA 11**
 
-### [下載繁體翻譯版](https://xmikux.github.io/builds/xMikux/DynaTech/master/)
-[![Build Status](https://xmikux.github.io/builds/xMikux/DynaTech/master/badge.svg)](https://xmikux.github.io/builds/xMikux/DynaTech/master)
+### [下載繁體翻譯版](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master/)
+[![Build Status](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master/badge.svg)](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master)
 
 ### [Download](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/)
 [![Build Status](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/badge.svg)](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master)
