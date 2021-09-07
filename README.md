@@ -3,15 +3,13 @@
 其中大多數可能過於強大或過於不足.
 
 **該插件需求JAVA 11**
+> 此為**非官方**版本, 請勿在該作者問題追蹤內回報! <br>
+> [原作連結](https://github.com/ProfElements/DynaTech) | [非官方Discord](https://discord.gg/GF4CwjFXT9)
 
-### [下載繁體翻譯版](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master/)
-[![Build Status](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master/badge.svg)](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master)
-
-### [Download](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/)
-[![Build Status](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/badge.svg)](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master)
-
-此為**非官方**版本, 請勿在該作者的問題追蹤內回報!
-[原專案連結](https://github.com/ProfElements/DynaTech)
+| 非官方繁體中文版 | 官方英文版 |
+| -------- | -------- |
+| 點下方圖片下載 | 點下方圖片下載 |
+| [![Build Status](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master/badge.svg)](https://xmikux.github.io/builds/SlimeTraditionalTranslation/DynaTech/master) | [![Build Status](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master/badge.svg)](https://thebusybiscuit.github.io/builds/ProfElements/DynaTech/master) |
 
 ## 機器
 - **自動廚房** - 如果你安裝了ExoticGarden, 此機器將可使用. 它會自動製作任何設定在內的配方.
