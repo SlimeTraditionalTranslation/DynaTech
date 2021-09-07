@@ -1,9 +1,11 @@
 package me.profelements.dynatech.listeners;
 
-import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
+import javax.annotation.Nonnull;
+
 import me.profelements.dynatech.DynaTech;
 import me.profelements.dynatech.DynaTechItems;
 import me.profelements.dynatech.items.tools.ElectricalStimulator;
+
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,7 +14,7 @@ import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.inventory.ItemStack;
 
-import javax.annotation.Nonnull;
+import io.github.thebusybiscuit.slimefun4.utils.SlimefunUtils;
 
 public class ElectricalStimulatorListener implements Listener {
     

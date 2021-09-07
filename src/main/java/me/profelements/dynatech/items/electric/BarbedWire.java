@@ -1,10 +1,8 @@
 package me.profelements.dynatech.items.electric;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import me.profelements.dynatech.DynaTech;
-import me.profelements.dynatech.items.electric.abstracts.AMachine;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -15,15 +13,19 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.NumberConversions;
 import org.bukkit.util.Vector;
 
+import me.mrCookieSlime.Slimefun.Lists.RecipeType;
+import me.mrCookieSlime.Slimefun.Objects.Category;
+import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
+import me.profelements.dynatech.DynaTech;
+import me.profelements.dynatech.items.electric.abstracts.AMachine;
+
 import javax.annotation.Nonnull;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BarbedWire extends AMachine {
     private static final int MAX_DIRECTION_VEL = 10000;
 
-    public BarbedWire(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
-        super(itemGroup, item, recipeType, recipe);
+    public BarbedWire(Category category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+        super(category, item, recipeType, recipe);
     }
     
     

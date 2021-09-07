@@ -1,20 +1,21 @@
 package me.profelements.dynatech.items.misc;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.attributes.RandomMobDrop;
 import org.bukkit.inventory.ItemStack;
+
+import io.github.thebusybiscuit.slimefun4.api.items.ItemSetting;
+import io.github.thebusybiscuit.slimefun4.core.attributes.RandomMobDrop;
+import me.mrCookieSlime.Slimefun.Lists.RecipeType;
+import me.mrCookieSlime.Slimefun.Objects.Category;
+import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
+import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 
 public class MobDropItem extends SlimefunItem implements RandomMobDrop {
 
     private final ItemSetting<Boolean> dropSetting = new ItemSetting<>(this, "drop-from-mob", true);
     private int dropChance = 0;
 
-    public MobDropItem(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, int dropChance) {
-        super(itemGroup, item, recipeType, recipe);
+    public MobDropItem(Category category, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe, int dropChance) {
+        super(category, item, recipeType, recipe);
         this.dropChance = dropChance;
 
         addItemSetting(dropSetting);

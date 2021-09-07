@@ -14,6 +14,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import javax.annotation.Nonnull;
+
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;

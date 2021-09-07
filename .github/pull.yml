@@ -4,5 +4,4 @@ rules:
     upstream: ProfElements:master
     mergeMethod: merge
     conflictReviewers:
-      - weiii-joe
-      - xMikux
+      - SlimeTraditionalTranslation/Translate-Maintainer
