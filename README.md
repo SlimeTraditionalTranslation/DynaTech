@@ -57,6 +57,7 @@
 
 ## 整合 
  - **惱鬼怪物資料卡** - 如果有安裝 InfinityExpansion (無限附加), 那麼你將會有惱鬼怪物資料卡, 來幫助你獲取幽靈精華與惱鬼寶石
+ - **夜魅怪物資料卡** - 如果有安裝 InfinityExpansion (無限附加), 那麼你將會有夜魅怪物資料卡, 來幫助你生產夜魅皮膜
 
 ## Credits
  [NCBPFluffyBear](https://github.com/ncbpfluffybear) for their autocrafter code since it helped alot with the Auto-Kitchen.
