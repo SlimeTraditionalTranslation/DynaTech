@@ -459,6 +459,19 @@ public class DynaTechItems {
         LoreBuilderDynamic.powerPerSecond(1024),
         ""  
     );
+    
+    public static final SlimefunItemStack EXTERNAL_HEATER = new SlimefunItemStack("DT_EXTERNAL_HEATER", 
+        Material.BRICKS,
+        "&6外部加熱器",
+        "",
+        "&f從外部加熱 熔爐、高爐、",
+        "&f和煙燻爐.",
+        "",
+        LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+        LoreBuilder.powerBuffer(2048),
+        LoreBuilderDynamic.power(128, " 每格被加熱方塊")
+    );
+
 
     //Generators
     public static final SlimefunItemStack WATER_MILL = new SlimefunItemStack("WATER_MILL",
