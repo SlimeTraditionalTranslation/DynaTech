@@ -75,7 +75,24 @@ public class DynaTechItems {
         "",
         "&7ID: <ID>",
         "",
-        "&e右鍵點擊 &7打開."
+       "&e右鍵點擊 &7打開."
+    );
+    
+    public static final SlimefunItemStack SOULBOUND_PICNIC_BASKET = new SlimefunItemStack("SOULBOUND_PICNIC_BASKET",
+        new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode("7a6bf916e28ccb80b4ebfacf98686ad6af7c4fb257e57a8cb78c71d19dccb2"))),
+        "&6靈魂綁定野餐籃",
+        "",
+        "&f可儲存食物",
+        "&f當你餓的時候自動餵食",
+        "&f必須在你的背包內",
+        "",
+        "&f大小: &e27",
+        "",
+        "&7ID: <ID>",
+        "",
+       "&e右鍵點擊 &7打開.",
+        "",
+        "&d靈魂綁定"
     );
 
     public static final SlimefunItemStack INVENTORY_FILTER = new SlimefunItemStack("INVENTORY_FILTER",
@@ -120,7 +137,7 @@ public class DynaTechItems {
         "&f用於抓蜜蜂.",
         "",
         "&f&o請記得別被螫",
-        "",
+       "",
         LoreBuilder.powerCharged(0, 512)
     );
 
