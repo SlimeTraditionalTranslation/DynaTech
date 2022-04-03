@@ -6,3 +6,11 @@ rules:
     conflictReviewers:
       - weiii-joe
       - xMikux
+      - xwinhyukx
+  - base: master
+    upstream: Slimefun-Addon-Community:master
+    mergeMethod: merge
+    conflictReviewers:
+      - weiii-joe
+      - xMikux
+      - xwinhyukx
