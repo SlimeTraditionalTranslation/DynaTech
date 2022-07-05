@@ -1,8 +1,8 @@
 package me.profelements.dynatech;
 
+import io.github.bakedlibs.dough.updater.GitHubBuildsUpdater;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
-//import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.profelements.dynatech.items.backpacks.PicnicBasket;
 import me.profelements.dynatech.items.misc.DimensionalHomeDimension;
@@ -62,9 +62,9 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
         getServer().getScheduler().runTaskTimerAsynchronously(DynaTech.getInstance(), new ItemBandTask(), 0L, 5 * 20L);
         getServer().getScheduler().runTaskTimer(DynaTech.getInstance(), () -> this.tickInterval++, 0, TICK_TIME);
 
-        /*if (getConfig().getBoolean("options.auto-update", true) && getDescription().getVersion().startsWith("DEV - ")) {
-            new GitHubBuildsUpdater(this, getFile(), "ProfElements/DynaTech/master").start();
-        }*/
+        if (getConfig().getBoolean("options.auto-update", true) && getDescription().getVersion().startsWith("EFI - ")) {
+            new GitHubBuildsUpdater(this, getFile(), "SlimeTraditionalTranslation/DynaTech/master").start();
+        }
 
         if (System.getProperty("java.version").startsWith("1.8")) {
             getLogger().log(Level.WARNING, "           Dyna科技將會切換至JAVA 11        ");
