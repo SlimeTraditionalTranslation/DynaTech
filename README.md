@@ -3,6 +3,11 @@
 其中大多數可能過於強大或過於不足.
 
 **該插件需求JAVA 11**
+**該插件需求MINECRAFT 1.19.X**
+
+Dyna科技 **永不** 向前相容舊版 Minecraft 版本.
+作者不想再花時間去處理舊版本的問題與額外開發時間.
+
 > 此為**非官方**版本, 請勿在該作者問題追蹤內回報! <br>
 > [原作連結](https://github.com/ProfElements/DynaTech) | [非官方Discord](https://discord.gg/GF4CwjFXT9)
 
