@@ -1,4 +1,4 @@
-package me.profelements.dynatech.items.tools;
+package me.profelements.dynatech.items.electric.machines;
 
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.collections.RandomizedSet;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.profelements.dynatech.DynaTech;
-import me.profelements.dynatech.items.electric.abstracts.AMachine;
+import me.profelements.dynatech.items.abstracts.AbstractElectricTicker;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -22,7 +22,7 @@ import javax.annotation.Nonnull;
 
 //I feel like this can somehow be much better :O (review)
 
-public class Orechid extends AMachine implements RecipeDisplayItem {
+public class Orechid extends AbstractElectricTicker implements RecipeDisplayItem {
 
     private static final Map<Material, RandomizedSet<ItemStack>> ORE_MAP = new EnumMap<>(Material.class);
     //private static final List<Material> END_ORES = new ArrayList<>();
@@ -31,9 +31,14 @@ public class Orechid extends AMachine implements RecipeDisplayItem {
         super(itemGroup, item, recipeType, recipe);
         registerDefaultOres();
     }
+    
+    @Override
+    protected boolean checkTickPreconditions(Block b) {
+        return true;
+    }
 
     @Override
-    public void tick(Block b) {
+    public void tick(Block b, SlimefunItem sfItem) {
         if (DynaTech.getInstance().getTickInterval() % 10 == 0) {
             for (BlockFace relative : BlockFace.values()) {
                 if (getCharge(b.getLocation()) < getEnergyConsumption()) {
@@ -106,21 +111,6 @@ public class Orechid extends AMachine implements RecipeDisplayItem {
         }
 
         return displayList;
-    }
-
-    @Override
-    public boolean isGraphical() {
-        return false;
-    }
-
-    @Override
-    public String getMachineIdentifier() {
-        return "ORECHID";
-    }
-
-    @Override
-    public ItemStack getProgressBar() {
-        return new ItemStack(Material.WITHER_ROSE);
     }
     
 }

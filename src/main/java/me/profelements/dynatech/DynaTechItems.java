@@ -28,6 +28,9 @@ public class DynaTechItems {
     public static final SubItemGroup DT_TOOLS = new SubItemGroup(new NamespacedKey(DynaTech.getInstance(), "DT_TOOLS"), DT_GENERAL, new CustomItemStack(Material.DIAMOND_AXE, "&bDyna科技 工具"));
     public static final SubItemGroup DT_MACHINES = new SubItemGroup(new NamespacedKey(DynaTech.getInstance(), "DT_MACHINES"), DT_GENERAL, new CustomItemStack(Material.SEA_LANTERN, "&bDyna科技 機器"));
     public static final SubItemGroup DT_GENERATORS = new SubItemGroup(new NamespacedKey(DynaTech.getInstance(), "DT_GENERATORS"), DT_GENERAL, new CustomItemStack(Material.PRISMARINE_BRICKS, "&bDyna科技 發電機"));
+    
+    public static final SubItemGroup DT_HIVES = new SubItemGroup(new NamespacedKey(DynaTech.getInstance(), "DT_HIVES"), DT_GENERAL, new CustomItemStack(Material.BEEHIVE, "&bDyna科技 蜂房"));
+
 
     public static final RecipeType DynaTechScoop = new RecipeType(new NamespacedKey(DynaTech.getInstance(), "dt_scoop"),
         new CustomItemStack(Material.IRON_SHOVEL, "&b使用勺子鏟蜜蜂")
@@ -214,6 +217,20 @@ public class DynaTechItems {
         LoreBuilderDynamic.powerPerSecond(16)
     );
 
+    //Machines
+    public static final SlimefunItemStack KITCHEN_AUTO_CRAFTER = new SlimefunItemStack("KITCHEN_AUTO_CRAFTER",
+        new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode("c5c5b24cd5efa07d31beea655d7ff972e6f47cdb898be4404363deeba43ba5d"))),
+        "&6Kitchen Auto Crafter",
+        "",
+        "&fAutomatically makes Kitchen recipes",
+        "",
+        "&f&oSmells like cookies",
+        "",
+        LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
+        LoreBuilder.speed(1),
+        LoreBuilderDynamic.powerPerSecond(16)
+    );
+
     public static final SlimefunItemStack GROWTH_CHAMBER = new SlimefunItemStack("GROWTH_CHAMBER",
         Material.GREEN_STAINED_GLASS,
         "&6生長倉",
@@ -354,7 +371,7 @@ public class DynaTechItems {
     
     public static final SlimefunItemStack MATERIAL_HIVE = new SlimefunItemStack("MATERIAL_HIVE",
         Material.BEEHIVE,
-        "&6材質蜂巢",
+        "&6材料蜂巢",
         "",
         "&f使用電力與蜜蜂, 慢慢產生物質.",
         "",
