@@ -25,4 +25,17 @@ public class TranslateTR {
                 return "錯誤！" + Name;
         }
     }
+
+    public static String LiquidVanillaName (String Name){
+        switch (Name) {
+            case "NO_LIQUID":
+                return "無流體";
+            case "WATER":
+                return "水";
+            case "LAVA":
+                return "熔岩";
+            default:
+                return "錯誤！" + Name;
+        }
+    }
 }

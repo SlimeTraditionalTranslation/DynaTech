@@ -58,10 +58,12 @@ public class PicnicBasketListener implements Listener {
         }
 
         for (ItemStack item : p.getInventory().getContents()) {
-            if (picnicBasket.isItem(item) && picnicBasket.canUse(p, true)) {
-                takeFoodFromPicnicBasket(p, item);
-            } else {
-                return;
+            if (picnicBasket.isItem(item)) { 
+                if (picnicBasket.canUse(p, true)) {
+                    takeFoodFromPicnicBasket(p, item);
+                } else { 
+                    return; 
+                }
             }
         }
     }
@@ -82,9 +84,9 @@ public class PicnicBasketListener implements Listener {
         for (int i = 0; i < inv.getSize(); i++) {
             ItemStack item = inv.getItem(i);
             
-            if (item != null && (getFoodItems().keySet().contains(item.getType()) || (DynaTech.isExoticGardenInstalled() && SlimefunItem.getByItem(item) instanceof CustomFood))) {
-                slot = i;
-            } 
+            if (item != null) {
+                    slot = i; 
+            }
         }
 
         if (slot >= 0) {
@@ -93,8 +95,8 @@ public class PicnicBasketListener implements Listener {
             plugin.getServer().getPluginManager().callEvent(event);
 
             if (!event.isCancelled()) {
-                if (getFoodItems().keySet().contains(event.getItemConsumed().getType())) {
-                    p.setFoodLevel(p.getFoodLevel() + getFoodItems().get(event.getItemConsumed().getType())); 
+                if (getFoodItems().keySet().contains(item.getType()) && (p.getFoodLevel() + getFoodItems().get(item.getType())) <= 20) {
+                    p.setFoodLevel(p.getFoodLevel() + getFoodItems().get(item.getType())); 
                     p.setSaturation(p.getSaturation() + 4F);
                     p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_BURP, 1F, 1F);
                     
@@ -107,7 +109,7 @@ public class PicnicBasketListener implements Listener {
 
                     backpack.markDirty();
                     return true;    
-                } else if (DynaTech.isExoticGardenInstalled() && SlimefunItem.getByItem(item) instanceof CustomFood customFood) {
+                } else if (DynaTech.isExoticGardenInstalled() && SlimefunItem.getByItem(item) instanceof CustomFood customFood && (p.getFoodLevel() + customFood.getFoodValue()) <= 20) {
                     p.setFoodLevel(p.getFoodLevel() + customFood.getFoodValue()); 
                     p.setSaturation(p.getSaturation() + 4F);
                     p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_BURP, 1F, 1F); 
